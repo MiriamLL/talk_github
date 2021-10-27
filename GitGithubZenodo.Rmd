@@ -1,0 +1,556 @@
+---
+title: "Clase 13"
+subtitle: "Github"
+author: "Miriam Lerma"
+date: "October 2021"
+output:
+  xaringan::moon_reader:
+    css: Rmd-themer-darker.css
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+---
+
+```{r include = FALSE}
+#Paquetes
+library(xaringanExtra)
+xaringanExtra::use_clipboard()
+library(kableExtra)
+options(knitr.table.format = "latex")
+```
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+class: title-slide, center, middle
+background-image: url(https://images.unsplash.com/photo-1485254767195-60704c46702e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80)
+background-size: cover
+
+# `r text_spec("Git & Github", background = "#1d3557", color = "white", bold = T, font_size=60)`
+
+<br>
+<h2>`r text_spec("Miriam Lerma", background = "#264653", color = "white", bold = T)`</h2>
+
+<h3>`r text_spec("October 2021", background = "#0A121F", color = "white", bold = T)`</h3>
+
+
+---
+
+class: inverse
+
+# Intro
+
+- [Git](#git)
+- [Github](#github)
+- [Reproducibility](#repro)
+- [Git+Github](#git_github)
+- [Organice projects](#organize)
+
+```{r, echo=FALSE}
+library(emo)
+library(fontawesome)
+ColorLink<-"#74c69d"
+```
+
+---
+name: git
+class: center, middle, inverse
+
+# 1. Git
+
+---
+
+## 1.2. Git
+
+```{r, echo=FALSE, out.height=50, fig.align='center'}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/200px-Git-logo.svg.png')
+```
+
+**Git** is a version control software (VCS-Version control system). 
+
+- The advantages of using **version control** is that you can modify your code/analyses and have a safe backup.
+In you **repository** you can have always the latest version
+
+- It also allows you to have the history of changes that you have done to your **repository** and be able to trace back to old files. 
+You can go back to older version on your projects
+
+- You repository can be only local if you dont want to put it online
+
+**Cons**:
+
+- It takes some time to get use to it
+
+- It was developed by programmers so its usually not very intuitive to use
+
+---
+
+## 1.3. Install
+
+- To dowload :<br>
+Webpage: [git](https://git-scm.com/)
+
+- Select your OS (operating system):<br>
+[Windows](https://happygitwithr.com/install-git.html#install-git-windows)<br>
+[macOS](https://happygitwithr.com/install-git.html#macos)<br>
+[Linux](https://happygitwithr.com/install-git.html#linux)
+
+
+- The installation is very different between computers
+- You only need to install it once
+
+---
+name: github
+class: center, middle, inverse
+
+# 2. Github
+
+---
+
+
+
+## 2.1. What is GitHub
+
+```{r, echo=FALSE, out.height=200, fig.align='center'}
+knitr::include_graphics('https://avatars.githubusercontent.com/u/583231?v=4')
+```
+
+[Github](https://github.com/): is a provider of internet hosting for software development and version control using git <br>
+
+However, it is not the only one and there are many other platforms to host repositories. <br>
+
+For example: [gitlab](https://about.gitlab.com/)
+```{r, echo=FALSE, out.height=80, fig.align='center'}
+knitr::include_graphics('https://about.gitlab.com/images/press/press-kit-icon.svg')
+```
+
+Which one to use? Discussion between [Github o Gitlab](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
+
+---
+
+## 2.1. Why Github
+
+- It allows you to have a backup of your project online
+- Allows collaboration 
+- Simplifies remote work
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control06.png')
+```
+
+---
+
+## 2.2. To use GitHub
+
+You need to register [Github](https://github.com/) <br>
+
+```{r, echo=FALSE, out.height=400}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github1.png')
+```
+
+---
+
+## 2.3. Create an user name
+
+You can register using your email <br>
+```{r, echo=FALSE, out.height=300, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github2.png')
+```
+
+**Recommended**
+- Use a similar name that the one from your publications, so people can easily find you and trust your repository
+- Select a name that you feel comfortable to use in the future
+- Short names are preferred than long names
+- Separate name using _ or -
+
+[Click here for further reading](https://happygitwithr.com/github-acct.html)
+
+---
+
+## 2.4. Create a repository
+
+There are many ways to create a repository, using the **+** symbol next to your picture is one. 
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github3.png')
+```
+
+---
+
+## 2.5. Make a public repository
+
+In the description of your repository, you can select if you want to make it public or private. You can change it later if you want to. 
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github4.png')
+```
+
+---
+
+## 2.6. Upload files in your repository
+
+- There are also many ways to upload files. Initially you can just **upload an existing file**
+
+```{r, echo=FALSE, out.height=100, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github6.png')
+```
+
+---
+
+## 2.7. Repository
+
+Select your files, **commit changes** and there is your repository.
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github7.png')
+```
+
+To share it, you can go to setting and add the email of the person you want to share it with. 
+
+---
+
+name: repro
+class: center, middle, inverse
+
+# 3. Reproducibility
+
+---
+
+# 3.1. Share
+
+- Work locally, share globally.
+
+You can collaborate with many people working on the same projects.  
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://miro.medium.com/max/700/0*68fyM5AI85U_I3vo.jpg')
+```
+
+
+---
+
+## 3.1. Share
+
+But not only that! you can help your future **you** to be replicate your analyses. 
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://pbs.twimg.com/media/EjQ5HsYXkAAqXmj.jpg')
+```
+
+... or your students, employees, etc... 
+
+---
+
+## 3.3. Reproducibility crisis
+
+.pull-left[
+From 1500 researchers that try to reproduce published research, 70% failed. 
+
+This has been quoted a reproducibility crisis. 
+
+- [`r fa("youtube", fill = 'red')` Ted talk](https://www.youtube.com/watch?v=FpCrY7x5nEE)
+]
+
+.pull-right[
+```{r, echo=FALSE, out.height=300, fig.align='center'}
+knitr::include_graphics('https://www.nature.com/news/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg')
+```
+]
+.right[Fuente: [nature](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)]
+
+
+---
+
+## 3.4. Reproducibility crisis
+
+There is low reproducibility in ecology ([Culina 2020](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000763))
+
+- **73%** from published papers (between 2015 and 2019, n = 346) do not include code
+- **5%** not all the code
+- **1%** no tada
+- **21%** almost reproducible (26% do not use free software, 56% do not include data set, y 46% not version of the software)
+
+```{r, echo=FALSE, out.height=300, fig.align='center'}
+knitr::include_graphics('https://media.eurekalert.org/multimedia_prod/pub/web/238857_web.jpg')
+```
+.right[ Fuente: [@Culina](https://twitter.com/antica_c/status/1288382890636709888)]
+
+---
+
+## 3.5. Old code
+
+.pull-left[
+Interestingly, the low reproducibility not apply to other scientist but also their **OWN** research. 
+
+Lack of documentation and old programs were the main problems to reproduce research from 10 years ago
+]
+.pull-right[
+- [Ten years reproducibility challenge](https://rescience.github.io/ten-years/)
+
+```{r, echo=FALSE, out.height=250}
+knitr::include_graphics('https://media.nature.com/w1172/magazine-assets/d41586-020-02462-7/d41586-020-02462-7_18291680.jpg')
+```
+
+Fuente: [nature](https://www.nature.com/articles/d41586-020-02462-7)
+]
+
+
+---
+
+## 3.6. Gradient of reproducibility
+
+.center[<h4>Text + Data + Code</h4>]
+
+```{r, echo=FALSE, out.height=300, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/Pakillo/writing-reproducible-manuscripts/master/images/Fig1.jpg')
+```
+
+.right[ Fuente: [Pakillo](https://github.com/Pakillo/writing-reproducible-manuscripts) ]
+
+---
+
+name: git_github
+class: center, middle, inverse
+
+# 4.  Git + Github
+
+---
+
+## 4.1. Git + Github
+
+You can share projects, code, workflows.
+
+Ho I do it is by:
+- Creating an R project
+- Having  git installed
+- Having git connected : [introduce yourself to git](https://happygitwithr.com/hello-git.html)
+- Having a github account
+
+To read more:
+- [Cheat Sheets](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107)
+- [What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [How to teach git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
+
+
+---
+
+## 4.2. R projects
+
+Instead of uploading file by file, you can connect your git to an R project in RStudio.
+
+**RStudio** is an Integrated Development Environment (IDE) for R, a programming language for statistical computing and graphics. 
+
+Note that you can have R scripts and SQL queries in RStudio. 
+
+```{r, echo=FALSE, out.height=350, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git01.png')
+```
+
+---
+
+## 4.3. Version control
+
+Very briefly: 
+
+- On R Studio you can select the project option of having a version control. 
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git02.png')
+```
+
+---
+
+## 4.4. Clone
+
+- You copy the link that you created online in your repository
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git03.png')
+```
+
+---
+
+## 4.5. Repositorio
+
+- You paste the link on your git repository.
+
+```{r, echo=FALSE, out.height=400, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git04.png')
+```
+
+---
+
+## 4.6. Pestaña
+
+- If it works you will have the following icons.
+
+```{r, echo=FALSE, out.height=300, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git05.png')
+```
+
+---
+
+## 4.7. Pull
+
+Now you can either download everything that was in the repository
+
+```{r, echo=FALSE, out.height=200, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git07-pestania.png')
+```
+
+This screen will appear
+```{r, echo=FALSE, out.height=200, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git06-pull.png')
+```
+
+---
+
+## 4.8. Stage & Commit
+
+You can then change the files, and add a commit. 
+
+```{r, echo=FALSE, out.height=200, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git08-commit.png')
+```
+
+**Important**
+
+Every time we make a commit git storage it with a 40-digit unique code. It is important to add the commit message to be able to identify the change in the future. It is very unlikely that we will remember the 40-digit code!
+
+If you have an older project you can click on the history and see what I mean. 
+
+---
+
+## 4.9. Push
+
+Now to upload it to github and make the latest version available to collaborators you need to click on **push**.
+
+This screen will appear
+```{r, echo=FALSE, out.height=300, fig.align='center'}
+knitr::include_graphics('https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git09-push.png')
+```
+
+---
+
+name: organize
+class: center, middle, inverse
+
+# 5.  Organize
+
+---
+
+## 5.1. Naming things
+
+What are all those files in the repository?
+
+--
+
+**Difficult names**:  
+
+- Final December Introduction.pdf  
+- Model.xlsx  
+- Figure12.png  
+--
+
+- Final December Introduction-2.pdf    
+- Models.txt   
+- Figure1234.docx  
+--
+
+- Final December Introduction-2_Final.pdf   
+--
+
+- Final December Introduction-2_Final-Rev.pdf 
+
+Source: [Stephanie Orellana](https://sporella.github.io/nombrar_cosas/#3), [Jenny Bryan](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+
+---
+
+## 5.2. Good names
+
+<h4>`r fa("laptop", fill = "black")`  Machine readable</h4>
+<h4>`r fa("user-friends", fill = "black")` Human readable </h4>
+<h4>`r fa("robot", fill = "black")`  Plays well with default ordering </h4>
+
+---
+
+## 5.3. Machine readable `r fa("laptop", fill = "black")`
+
+- Use key words 
+- No special characters  
+- No punctuation
+- Use "_" to separate names with more than one word
+
+<br>
+
+**Avoid**
+- Using similar key words for files with different contents
+
+---
+
+## 5.4. Human readable `r fa("user-friends", fill = "black")`
+
+You can easily understand what the files contents are
+
+- 01_Introduction.docx  
+- 02_Metholodogy.docx  
+- 03_Discussion.docx  
+- 04_Tables.docx  
+
+**Note**
+Makes more sense is everything is contained in a folder/project
+
+---
+
+## 5.5. Default ordering `r fa("robot")`
+
+Using something numeric at the beginning allows you to order by default, and the best its include zeros. 
+If we do not include zeros at the beginning, it would not line with the 10. 
+
+Some folders are:  
+
+01Data
+02Scripts
+03Results  
+
+Other options: 
+
+01_Data  
+01_data  
+
+---
+
+name: end
+class: center, middle, inverse
+
+
+# Keen to learn more?
+
+
+- Happy git:    
+[`r fa("book-open", fill = ColorLink)` Happy Git by Jennifer Bryan](https://happygitwithr.com/)<br>
+- Tutorials   
+[`r fa("youtube", fill = ColorLink)` RLadiesFreiburg](https://www.youtube.com/watch?v=tSse0KPgSoQ&t=1s)
+- Image by
+[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)
+
+<br>
+<br>
+
+.right[This material is all accessible in <br>
+my [`r fa("external-link-alt", fill = '#74c69d')`github](https://github.com/MiriamLL/Curso_CIAD/)
+and my [`r fa("external-link-alt", fill = '#74c69d')`blog](https://www.miriam-lerma.com/materiales.html)
+
+
+.center[
+```{r, echo=FALSE}
+library(fontawesome)
+```
+<h3>`r fa("home", fill = "#74c69d")`[Home ](https://www.miriam-lerma.com)
+]]
+
+
+
+

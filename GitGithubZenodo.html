@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Clase 13</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Miriam Lerma" />
+    <script src="GitGithubZenodo_files/header-attrs-2.9/header-attrs.js"></script>
+    <script src="GitGithubZenodo_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="GitGithubZenodo_files/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="GitGithubZenodo_files/xaringanExtra-clipboard-0.2.4/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="GitGithubZenodo_files/panelset-0.2.4/panelset.css" rel="stylesheet" />
+    <script src="GitGithubZenodo_files/panelset-0.2.4/panelset.js"></script>
+    <link rel="stylesheet" href="Rmd-themer-darker.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+class: title-slide, center, middle
+background-image: url(https://images.unsplash.com/photo-1485254767195-60704c46702e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80)
+background-size: cover
+
+# &lt;span style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #1d3557 !important;font-size: 60px;" &gt;Git &amp;amp; Github&lt;/span&gt;
+
+&lt;br&gt;
+&lt;h2&gt;&lt;span style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #264653 !important;" &gt;Miriam Lerma&lt;/span&gt;&lt;/h2&gt;
+
+&lt;h3&gt;&lt;span style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #0A121F !important;" &gt;October 2021&lt;/span&gt;&lt;/h3&gt;
+
+
+---
+
+class: inverse
+
+# Intro
+
+- [Git](#git)
+- [Github](#github)
+- [Reproducibility](#repro)
+- [Git+Github](#git_github)
+- [Organice projects](#organize)
+
+
+
+---
+name: git
+class: center, middle, inverse
+
+# 1. Git
+
+---
+
+## 1.2. Git
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/200px-Git-logo.svg.png" height="50" style="display: block; margin: auto;" /&gt;
+
+**Git** is a version control software (VCS-Version control system). 
+
+- The advantages of using **version control** is that you can modify your code/analyses and have a safe backup.
+In you **repository** you can have always the latest version
+
+- It also allows you to have the history of changes that you have done to your **repository** and be able to trace back to old files. 
+You can go back to older version on your projects
+
+- You repository can be only local if you dont want to put it online
+
+**Cons**:
+
+- It takes some time to get use to it
+
+- It was developed by programmers so its usually not very intuitive to use
+
+---
+
+## 1.3. Install
+
+- To dowload :&lt;br&gt;
+Webpage: [git](https://git-scm.com/)
+
+- Select your OS (operating system):&lt;br&gt;
+[Windows](https://happygitwithr.com/install-git.html#install-git-windows)&lt;br&gt;
+[macOS](https://happygitwithr.com/install-git.html#macos)&lt;br&gt;
+[Linux](https://happygitwithr.com/install-git.html#linux)
+
+
+- The installation is very different between computers
+- You only need to install it once
+
+---
+name: github
+class: center, middle, inverse
+
+# 2. Github
+
+---
+
+
+
+## 2.1. What is GitHub
+
+&lt;img src="https://avatars.githubusercontent.com/u/583231?v=4" height="200" style="display: block; margin: auto;" /&gt;
+
+[Github](https://github.com/): is a provider of internet hosting for software development and version control using git &lt;br&gt;
+
+However, it is not the only one and there are many other platforms to host repositories. &lt;br&gt;
+
+For example: [gitlab](https://about.gitlab.com/)
+&lt;img src="https://about.gitlab.com/images/press/press-kit-icon.svg" height="80" style="display: block; margin: auto;" /&gt;
+
+Which one to use? Discussion between [Github o Gitlab](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
+
+---
+
+## 2.1. Why Github
+
+- It allows you to have a backup of your project online
+- Allows collaboration 
+- Simplifies remote work
+
+&lt;img src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control06.png" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 2.2. To use GitHub
+
+You need to register [Github](https://github.com/) &lt;br&gt;
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github1.png" height="400" /&gt;
+
+---
+
+## 2.3. Create an user name
+
+You can register using your email &lt;br&gt;
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github2.png" height="300" style="display: block; margin: auto;" /&gt;
+
+**Recommended**
+- Use a similar name that the one from your publications, so people can easily find you and trust your repository
+- Select a name that you feel comfortable to use in the future
+- Short names are preferred than long names
+- Separate name using _ or -
+
+[Click here for further reading](https://happygitwithr.com/github-acct.html)
+
+---
+
+## 2.4. Create a repository
+
+There are many ways to create a repository, using the **+** symbol next to your picture is one. 
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github3.png" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 2.5. Make a public repository
+
+In the description of your repository, you can select if you want to make it public or private. You can change it later if you want to. 
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github4.png" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 2.6. Upload files in your repository
+
+- There are also many ways to upload files. Initially you can just **upload an existing file**
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github6.png" height="100" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 2.7. Repository
+
+Select your files, **commit changes** and there is your repository.
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Github7.png" height="400" style="display: block; margin: auto;" /&gt;
+
+To share it, you can go to setting and add the email of the person you want to share it with. 
+
+---
+
+name: repro
+class: center, middle, inverse
+
+# 3. Reproducibility
+
+---
+
+# 3.1. Share
+
+- Work locally, share globally.
+
+You can collaborate with many people working on the same projects.  
+
+&lt;img src="https://miro.medium.com/max/700/0*68fyM5AI85U_I3vo.jpg" height="400" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+## 3.1. Share
+
+But not only that! you can help your future **you** to be replicate your analyses. 
+
+&lt;img src="https://pbs.twimg.com/media/EjQ5HsYXkAAqXmj.jpg" height="400" style="display: block; margin: auto;" /&gt;
+
+... or your students, employees, etc... 
+
+---
+
+## 3.3. Reproducibility crisis
+
+.pull-left[
+From 1500 researchers that try to reproduce published research, 70% failed. 
+
+This has been quoted a reproducibility crisis. 
+
+- [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:red;" viewBox="0 0 576 512"&gt;&lt;path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/&gt;&lt;/svg&gt; Ted talk](https://www.youtube.com/watch?v=FpCrY7x5nEE)
+]
+
+.pull-right[
+&lt;img src="https://www.nature.com/news/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height="300" style="display: block; margin: auto;" /&gt;
+]
+.right[Fuente: [nature](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)]
+
+
+---
+
+## 3.4. Reproducibility crisis
+
+There is low reproducibility in ecology ([Culina 2020](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000763))
+
+- **73%** from published papers (between 2015 and 2019, n = 346) do not include code
+- **5%** not all the code
+- **1%** no tada
+- **21%** almost reproducible (26% do not use free software, 56% do not include data set, y 46% not version of the software)
+
+&lt;img src="https://media.eurekalert.org/multimedia_prod/pub/web/238857_web.jpg" height="300" style="display: block; margin: auto;" /&gt;
+.right[ Fuente: [@Culina](https://twitter.com/antica_c/status/1288382890636709888)]
+
+---
+
+## 3.5. Old code
+
+.pull-left[
+Interestingly, the low reproducibility not apply to other scientist but also their **OWN** research. 
+
+Lack of documentation and old programs were the main problems to reproduce research from 10 years ago
+]
+.pull-right[
+- [Ten years reproducibility challenge](https://rescience.github.io/ten-years/)
+
+&lt;img src="https://media.nature.com/w1172/magazine-assets/d41586-020-02462-7/d41586-020-02462-7_18291680.jpg" height="250" /&gt;
+
+Fuente: [nature](https://www.nature.com/articles/d41586-020-02462-7)
+]
+
+
+---
+
+## 3.6. Gradient of reproducibility
+
+.center[&lt;h4&gt;Text + Data + Code&lt;/h4&gt;]
+
+&lt;img src="https://raw.githubusercontent.com/Pakillo/writing-reproducible-manuscripts/master/images/Fig1.jpg" height="300" style="display: block; margin: auto;" /&gt;
+
+.right[ Fuente: [Pakillo](https://github.com/Pakillo/writing-reproducible-manuscripts) ]
+
+---
+
+name: git_github
+class: center, middle, inverse
+
+# 4.  Git + Github
+
+---
+
+## 4.1. Git + Github
+
+You can share projects, code, workflows.
+
+Ho I do it is by:
+- Creating an R project
+- Having  git installed
+- Having git connected : [introduce yourself to git](https://happygitwithr.com/hello-git.html)
+- Having a github account
+
+To read more:
+- [Cheat Sheets](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107)
+- [What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [How to teach git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
+
+
+---
+
+## 4.2. R projects
+
+Instead of uploading file by file, you can connect your git to an R project in RStudio.
+
+**RStudio** is an Integrated Development Environment (IDE) for R, a programming language for statistical computing and graphics. 
+
+Note that you can have R scripts and SQL queries in RStudio. 
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git01.png" height="350" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 4.3. Version control
+
+Very briefly: 
+
+- On R Studio you can select the project option of having a version control. 
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git02.png" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 4.4. Clone
+
+- You copy the link that you created online in your repository
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git03.png" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 4.5. Repositorio
+
+- You paste the link on your git repository.
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git04.png" height="400" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 4.6. Pestaña
+
+- If it works you will have the following icons.
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git05.png" height="300" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 4.7. Pull
+
+Now you can either download everything that was in the repository
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git07-pestania.png" height="200" style="display: block; margin: auto;" /&gt;
+
+This screen will appear
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git06-pull.png" height="200" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 4.8. Stage &amp; Commit
+
+You can then change the files, and add a commit. 
+
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git08-commit.png" height="200" style="display: block; margin: auto;" /&gt;
+
+**Important**
+
+Every time we make a commit git storage it with a 40-digit unique code. It is important to add the commit message to be able to identify the change in the future. It is very unlikely that we will remember the 40-digit code!
+
+If you have an older project you can click on the history and see what I mean. 
+
+---
+
+## 4.9. Push
+
+Now to upload it to github and make the latest version available to collaborators you need to click on **push**.
+
+This screen will appear
+&lt;img src="https://raw.githubusercontent.com/MiriamLL/Curso_CIAD/main/Figuras/Git09-push.png" height="300" style="display: block; margin: auto;" /&gt;
+
+---
+
+name: organize
+class: center, middle, inverse
+
+# 5.  Organize
+
+---
+
+## 5.1. Naming things
+
+What are all those files in the repository?
+
+--
+
+**Difficult names**:  
+
+- Final December Introduction.pdf  
+- Model.xlsx  
+- Figure12.png  
+--
+
+- Final December Introduction-2.pdf    
+- Models.txt   
+- Figure1234.docx  
+--
+
+- Final December Introduction-2_Final.pdf   
+--
+
+- Final December Introduction-2_Final-Rev.pdf 
+
+Source: [Stephanie Orellana](https://sporella.github.io/nombrar_cosas/#3), [Jenny Bryan](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+
+---
+
+## 5.2. Good names
+
+&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/&gt;&lt;/svg&gt;  Machine readable&lt;/h4&gt;
+&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/&gt;&lt;/svg&gt; Human readable &lt;/h4&gt;
+&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M0 256v128c0 17.7 14.3 32 32 32h32V224H32c-17.7 0-32 14.3-32 32zM464 96H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H176c-44.2 0-80 35.8-80 80v272c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V176c0-44.2-35.8-80-80-80zM256 416h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm128 120h-64v-32h64v32zm96 0h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm192-72h-32v192h32c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32z"/&gt;&lt;/svg&gt;  Plays well with default ordering &lt;/h4&gt;
+
+---
+
+## 5.3. Machine readable &lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/&gt;&lt;/svg&gt;
+
+- Use key words 
+- No special characters  
+- No punctuation
+- Use "_" to separate names with more than one word
+
+&lt;br&gt;
+
+**Avoid**
+- Using similar key words for files with different contents
+
+---
+
+## 5.4. Human readable &lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/&gt;&lt;/svg&gt;
+
+You can easily understand what the files contents are
+
+- 01_Introduction.docx  
+- 02_Metholodogy.docx  
+- 03_Discussion.docx  
+- 04_Tables.docx  
+
+**Note**
+Makes more sense is everything is contained in a folder/project
+
+---
+
+## 5.5. Default ordering &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 640 512"&gt;&lt;path d="M0 256v128c0 17.7 14.3 32 32 32h32V224H32c-17.7 0-32 14.3-32 32zM464 96H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H176c-44.2 0-80 35.8-80 80v272c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V176c0-44.2-35.8-80-80-80zM256 416h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm128 120h-64v-32h64v32zm96 0h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm192-72h-32v192h32c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32z"/&gt;&lt;/svg&gt;
+
+Using something numeric at the beginning allows you to order by default, and the best its include zeros. 
+If we do not include zeros at the beginning, it would not line with the 10. 
+
+Some folders are:  
+
+01Data
+02Scripts
+03Results  
+
+Other options: 
+
+01_Data  
+01_data  
+
+---
+
+name: end
+class: center, middle, inverse
+
+
+# Keen to learn more?
+
+
+- Happy git:    
+[&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/&gt;&lt;/svg&gt; Happy Git by Jennifer Bryan](https://happygitwithr.com/)&lt;br&gt;
+- Tutorials   
+[&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/&gt;&lt;/svg&gt; RLadiesFreiburg](https://www.youtube.com/watch?v=tSse0KPgSoQ&amp;t=1s)
+- Image by
+[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)
+
+&lt;br&gt;
+&lt;br&gt;
+
+.right[This material is all accessible in &lt;br&gt;
+my [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"/&gt;&lt;/svg&gt;github](https://github.com/MiriamLL/Curso_CIAD/)
+and my [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"/&gt;&lt;/svg&gt;blog](https://www.miriam-lerma.com/materiales.html)
+
+
+.center[
+
+&lt;h3&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/&gt;&lt;/svg&gt;[Home ](https://www.miriam-lerma.com)
+]]
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
