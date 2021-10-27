@@ -269,7 +269,7 @@ There is low reproducibility in ecology ([Culina 2020](https://journals.plos.org
 
 - **73%** from published papers (between 2015 and 2019, n = 346) do not include code
 - **5%** not all the code
-- **1%** no tada
+- **1%** no data
 - **21%** almost reproducible (26% do not use free software, 56% do not include data set, y 46% not version of the software)
 
 ```{r, echo=FALSE, out.height=300, fig.align='center'}
@@ -282,7 +282,7 @@ knitr::include_graphics('https://media.eurekalert.org/multimedia_prod/pub/web/23
 ## 3.5. Old code
 
 .pull-left[
-Interestingly, the low reproducibility not apply to other scientist but also their **OWN** research. 
+Interestingly, the low reproducibility does not apply to only to work form other scientist but also their **own** research. 
 
 Lack of documentation and old programs were the main problems to reproduce research from 10 years ago
 ]
@@ -443,6 +443,8 @@ class: center, middle, inverse
 
 ## 5.1. Naming things
 
+I share my repository... 
+
 What are all those files in the repository?
 
 --
@@ -471,54 +473,35 @@ Source: [Stephanie Orellana](https://sporella.github.io/nombrar_cosas/#3), [Jenn
 ## 5.2. Good names
 
 <h4>`r fa("laptop", fill = "black")`  Machine readable</h4>
-<h4>`r fa("user-friends", fill = "black")` Human readable </h4>
-<h4>`r fa("robot", fill = "black")`  Plays well with default ordering </h4>
 
----
-
-## 5.3. Machine readable `r fa("laptop", fill = "black")`
+--
 
 - Use key words 
 - No special characters  
 - No punctuation
 - Use "_" to separate names with more than one word
+- **Avoid** : Using similar key words for files with different contents
 
-<br>
+--
 
-**Avoid**
-- Using similar key words for files with different contents
+<h4>`r fa("user-friends", fill = "black")` Human readable </h4>
 
----
-
-## 5.4. Human readable `r fa("user-friends", fill = "black")`
-
-You can easily understand what the files contents are
-
+You can easily understand what the files contents are.
 - 01_Introduction.docx  
-- 02_Metholodogy.docx  
-- 03_Discussion.docx  
-- 04_Tables.docx  
+- 02_Analisis_ANOVA.Rmd
 
-**Note**
-Makes more sense is everything is contained in a folder/project
+--
 
----
-
-## 5.5. Default ordering `r fa("robot")`
+<h4>`r fa("robot", fill = "black")`  Plays well with default ordering </h4>
 
 Using something numeric at the beginning allows you to order by default, and the best its include zeros. 
 If we do not include zeros at the beginning, it would not line with the 10. 
 
-Some folders are:  
+--
 
-01Data
-02Scripts
-03Results  
-
-Other options: 
-
-01_Data  
-01_data  
+- 01_Introduction.docx  
+- 02_Discussion.docx  
+- 03_Tables.docx  
 
 ---
 
@@ -529,12 +512,12 @@ class: center, middle, inverse
 # Keen to learn more?
 
 
-- Happy git:    
+.left[- Happy git:    
 [`r fa("book-open", fill = ColorLink)` Happy Git by Jennifer Bryan](https://happygitwithr.com/)<br>
 - Tutorials   
 [`r fa("youtube", fill = ColorLink)` RLadiesFreiburg](https://www.youtube.com/watch?v=tSse0KPgSoQ&t=1s)
 - Image by
-[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)
+[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)]
 
 <br>
 <br>
@@ -543,6 +526,8 @@ class: center, middle, inverse
 my [`r fa("external-link-alt", fill = '#74c69d')`github](https://github.com/MiriamLL/Curso_CIAD/)
 and my [`r fa("external-link-alt", fill = '#74c69d')`blog](https://www.miriam-lerma.com/materiales.html)
 
+<br>
+<br>
 
 .center[
 ```{r, echo=FALSE}

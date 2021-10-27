@@ -235,7 +235,7 @@ There is low reproducibility in ecology ([Culina 2020](https://journals.plos.org
 
 - **73%** from published papers (between 2015 and 2019, n = 346) do not include code
 - **5%** not all the code
-- **1%** no tada
+- **1%** no data
 - **21%** almost reproducible (26% do not use free software, 56% do not include data set, y 46% not version of the software)
 
 &lt;img src="https://media.eurekalert.org/multimedia_prod/pub/web/238857_web.jpg" height="300" style="display: block; margin: auto;" /&gt;
@@ -246,7 +246,7 @@ There is low reproducibility in ecology ([Culina 2020](https://journals.plos.org
 ## 3.5. Old code
 
 .pull-left[
-Interestingly, the low reproducibility not apply to other scientist but also their **OWN** research. 
+Interestingly, the low reproducibility does not apply to only to work form other scientist but also their **own** research. 
 
 Lack of documentation and old programs were the main problems to reproduce research from 10 years ago
 ]
@@ -385,6 +385,8 @@ class: center, middle, inverse
 
 ## 5.1. Naming things
 
+I share my repository... 
+
 What are all those files in the repository?
 
 --
@@ -413,54 +415,35 @@ Source: [Stephanie Orellana](https://sporella.github.io/nombrar_cosas/#3), [Jenn
 ## 5.2. Good names
 
 &lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/&gt;&lt;/svg&gt;  Machine readable&lt;/h4&gt;
-&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/&gt;&lt;/svg&gt; Human readable &lt;/h4&gt;
-&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M0 256v128c0 17.7 14.3 32 32 32h32V224H32c-17.7 0-32 14.3-32 32zM464 96H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H176c-44.2 0-80 35.8-80 80v272c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V176c0-44.2-35.8-80-80-80zM256 416h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm128 120h-64v-32h64v32zm96 0h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm192-72h-32v192h32c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32z"/&gt;&lt;/svg&gt;  Plays well with default ordering &lt;/h4&gt;
 
----
-
-## 5.3. Machine readable &lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/&gt;&lt;/svg&gt;
+--
 
 - Use key words 
 - No special characters  
 - No punctuation
 - Use "_" to separate names with more than one word
+- **Avoid** : Using similar key words for files with different contents
 
-&lt;br&gt;
+--
 
-**Avoid**
-- Using similar key words for files with different contents
+&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/&gt;&lt;/svg&gt; Human readable &lt;/h4&gt;
 
----
-
-## 5.4. Human readable &lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/&gt;&lt;/svg&gt;
-
-You can easily understand what the files contents are
-
+You can easily understand what the files contents are.
 - 01_Introduction.docx  
-- 02_Metholodogy.docx  
-- 03_Discussion.docx  
-- 04_Tables.docx  
+- 02_Analisis_ANOVA.Rmd
 
-**Note**
-Makes more sense is everything is contained in a folder/project
+--
 
----
-
-## 5.5. Default ordering &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 640 512"&gt;&lt;path d="M0 256v128c0 17.7 14.3 32 32 32h32V224H32c-17.7 0-32 14.3-32 32zM464 96H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H176c-44.2 0-80 35.8-80 80v272c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V176c0-44.2-35.8-80-80-80zM256 416h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm128 120h-64v-32h64v32zm96 0h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm192-72h-32v192h32c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32z"/&gt;&lt;/svg&gt;
+&lt;h4&gt;&lt;svg style="height:0.8em;top:.04em;position:relative;fill:black;" viewBox="0 0 640 512"&gt;&lt;path d="M0 256v128c0 17.7 14.3 32 32 32h32V224H32c-17.7 0-32 14.3-32 32zM464 96H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H176c-44.2 0-80 35.8-80 80v272c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V176c0-44.2-35.8-80-80-80zM256 416h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm128 120h-64v-32h64v32zm96 0h-64v-32h64v32zm-32-120c-22.1 0-40-17.9-40-40s17.9-40 40-40 40 17.9 40 40-17.9 40-40 40zm192-72h-32v192h32c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32z"/&gt;&lt;/svg&gt;  Plays well with default ordering &lt;/h4&gt;
 
 Using something numeric at the beginning allows you to order by default, and the best its include zeros. 
 If we do not include zeros at the beginning, it would not line with the 10. 
 
-Some folders are:  
+--
 
-01Data
-02Scripts
-03Results  
-
-Other options: 
-
-01_Data  
-01_data  
+- 01_Introduction.docx  
+- 02_Discussion.docx  
+- 03_Tables.docx  
 
 ---
 
@@ -471,12 +454,12 @@ class: center, middle, inverse
 # Keen to learn more?
 
 
-- Happy git:    
+.left[- Happy git:    
 [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/&gt;&lt;/svg&gt; Happy Git by Jennifer Bryan](https://happygitwithr.com/)&lt;br&gt;
 - Tutorials   
 [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/&gt;&lt;/svg&gt; RLadiesFreiburg](https://www.youtube.com/watch?v=tSse0KPgSoQ&amp;t=1s)
 - Image by
-[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)
+[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)]
 
 &lt;br&gt;
 &lt;br&gt;
@@ -485,6 +468,8 @@ class: center, middle, inverse
 my [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"/&gt;&lt;/svg&gt;github](https://github.com/MiriamLL/Curso_CIAD/)
 and my [&lt;svg style="height:0.8em;top:.04em;position:relative;fill:#74c69d;" viewBox="0 0 576 512"&gt;&lt;path d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"/&gt;&lt;/svg&gt;blog](https://www.miriam-lerma.com/materiales.html)
 
+&lt;br&gt;
+&lt;br&gt;
 
 .center[
 
