@@ -1,5 +1,5 @@
 ---
-title: "Clase 13"
+title: "GithubShortIntro"
 subtitle: "Github"
 author: "Miriam Lerma"
 date: "October 2021"
