@@ -474,19 +474,16 @@ Source: [Stephanie Orellana](https://sporella.github.io/nombrar_cosas/#3), [Jenn
 
 ## 5.2. Good names
 
-<h4>`r fa("laptop", fill = "black")`  Machine readable</h4>
+`r fa("laptop", fill = "black")`  Machine readable
 
---
-
-- Use key words 
+- Use key words
 - No special characters  
-- No punctuation
-- Use "_" to separate names with more than one word
+- No punctuation, use "_" to separate names with more than one word
 - **Avoid** : Using similar key words for files with different contents
 
 --
 
-<h4>`r fa("user-friends", fill = "black")` Human readable </h4>
+`r fa("user-friends", fill = "black")` Human readable 
 
 You can easily understand what the files contents are.
 - 01_Introduction.docx  
@@ -494,16 +491,15 @@ You can easily understand what the files contents are.
 
 --
 
-<h4>`r fa("robot", fill = "black")`  Plays well with default ordering </h4>
+`r fa("robot", fill = "black")`  Plays well with default ordering
 
 Using something numeric at the beginning allows you to order by default, and the best its include zeros. 
 If we do not include zeros at the beginning, it would not line with the 10. 
 
---
-
 - 01_Introduction.docx  
 - 02_Discussion.docx  
 - 03_Tables.docx  
+
 
 ---
 
@@ -532,17 +528,13 @@ and my [`r fa("external-link-alt", fill = ColorLink)`blog](https://www.miriam-le
 <br>
 <br>
 
-.center[
+
 
 ```{r, echo=FALSE}
 library(fontawesome)
 ```
 [`r fa("home", fill = ColorLink)` Home ](https://www.miriam-lerma.com)
 
-]
 
-.center[
 [`r fa("play", fill = ColorLink)` Start ](https://miriamll.github.io/git_pres/GitGithubZenodo#1)
-]
-
 ]
