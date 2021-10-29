@@ -31,6 +31,8 @@ background-size: cover
 
 # `r text_spec("Git & Github", background = "#0091ad", color = "white", bold = T, font_size=80)`
 
+# `r text_spec("A short intro", background = "#0091ad", color = "white", bold = T, font_size=60)`
+
 <br>
 <h2>`r text_spec("Miriam Lerma", background = "#2e6f95", color = "white", bold = T)`</h2>
 
