@@ -26,15 +26,15 @@ xaringanExtra::use_panelset()
 ```
 
 class: title-slide, center, middle
-background-image: url(https://images.unsplash.com/photo-1485254767195-60704c46702e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80)
+background-image: url(https://images.unsplash.com/photo-1582769923195-c6e60dc1d8dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80)
 background-size: cover
 
-# `r text_spec("Git & Github", background = "#1d3557", color = "white", bold = T, font_size=60)`
+# `r text_spec("Git & Github", background = "#0091ad", color = "white", bold = T, font_size=80)`
 
 <br>
-<h2>`r text_spec("Miriam Lerma", background = "#264653", color = "white", bold = T)`</h2>
+<h2>`r text_spec("Miriam Lerma", background = "#2e6f95", color = "white", bold = T)`</h2>
 
-<h3>`r text_spec("October 2021", background = "#0A121F", color = "white", bold = T)`</h3>
+<h3>`r text_spec("October 2021", background = "#455e89", color = "white", bold = T)`</h3>
 
 
 ---
@@ -52,7 +52,7 @@ class: inverse
 ```{r, echo=FALSE}
 library(emo)
 library(fontawesome)
-ColorLink<-"#74c69d"
+ColorLink<-"#D6F8FF"
 ```
 
 ---
@@ -517,25 +517,30 @@ class: center, middle, inverse
 - Tutorials   
 [`r fa("youtube", fill = ColorLink)` RLadiesFreiburg](https://www.youtube.com/watch?v=tSse0KPgSoQ&t=1s)
 - Image by
-[Unsplash by Joel Filip](https://unsplash.com/@joelfilip)]
+[Unsplash by Adam Gonzales](https://unsplash.com/@adamgonzales)]
 
 <br>
 <br>
 
 .right[This material is all accessible in <br>
-my [`r fa("external-link-alt", fill = '#74c69d')`github](https://github.com/MiriamLL/Curso_CIAD/)
-and my [`r fa("external-link-alt", fill = '#74c69d')`blog](https://www.miriam-lerma.com/materiales.html)
+my [`r fa("external-link-alt", fill = ColorLink)`github](https://github.com/MiriamLL/Curso_CIAD/)
+and my [`r fa("external-link-alt", fill = ColorLink)`blog](https://www.miriam-lerma.com/materiales.html)
+
 
 <br>
 <br>
 
 .center[
+
 ```{r, echo=FALSE}
 library(fontawesome)
 ```
-<h3>`r fa("home", fill = "#74c69d")`[Home ](https://www.miriam-lerma.com)
-]]
+[<h3>`r fa("home", fill = ColorLink)` Home ](https://www.miriam-lerma.com)
 
+]
 
+.center[
+[<h3>`r fa("play", fill = ColorLink)` Start ](https://miriamll.github.io/git_pres/GitGithubZenodo#1)
+]
 
-
+]
