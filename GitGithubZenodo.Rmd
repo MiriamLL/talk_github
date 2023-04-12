@@ -139,7 +139,7 @@ Which one to use? Discussion between [Github o Gitlab](https://rachelcarmena.git
 - Simplifies remote work
 
 ```{r, echo=FALSE, out.height=400, fig.align='center'}
-knitr::include_graphics('https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control06.png')
+knitr::include_graphics('002Colaboration.png')
 ```
 
 ---
